@@ -1,0 +1,2028 @@
+s7
+r64
+<type_specifier> ::= .INT		,
+[0]
+s6
+s15
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0]
+s3
+s13
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 3, 13]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 3, 13]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 3, 13]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 3, 13]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 3, 13]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 3, 13]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 3, 13]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 3, 13]
+s30
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 3, 13]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 3, 13]
+s24
+s58
+r73
+<declaration> ::= .<parameter_declaration>=<expression>;		,
+[0]
+s2
+s5
+r65
+<type_specifier> ::= .CHAR		,
+[0, 2]
+s6
+s15
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 2]
+s3
+s13
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 2, 3, 13]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 2, 3, 13]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 2, 3, 13]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 2, 3, 13]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 2, 3, 13]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 2, 3, 13]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 2, 3, 13]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 2, 3, 13]
+s30
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 2, 3, 13]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 2, 3, 13]
+s24
+s58
+r73
+<declaration> ::= .<parameter_declaration>=<expression>;		,
+[0, 2]
+s2
+r74
+<declaration_list> ::= .<declaration>		,
+[0, 2]
+s12
+r75
+<declaration_list> ::= .<declaration><declaration_list>		,
+[0]
+s4
+r78
+<external_declaration> ::= .<declaration_list>		,
+[0]
+s11
+s9
+s16
+s36
+s7
+r64
+<type_specifier> ::= .INT		,
+[0, 11, 9, 16, 36]
+s79
+s120
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 11, 9, 16, 36]
+s80
+s82
+s7
+r64
+<type_specifier> ::= .INT		,
+[0, 11, 9, 16, 36, 80, 82]
+s79
+s120
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 11, 9, 16, 36, 80, 82]
+s123
+s82
+s7
+r64
+<type_specifier> ::= .INT		,
+[0, 11, 9, 16, 36, 80, 82, 123, 82]
+s79
+s120
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 11, 9, 16, 36, 80, 82, 123, 82]
+s123
+r71
+<parameter_list_> ::= .null		,
+[0, 11, 9, 16, 36, 80, 82, 123, 82, 123]
+s148
+r70
+<parameter_list_> ::= .,<parameter_declaration><parameter_list_>		,
+[0, 11, 9, 16, 36, 80, 82, 123]
+s148
+r70
+<parameter_list_> ::= .,<parameter_declaration><parameter_list_>		,
+[0, 11, 9, 16, 36, 80]
+s121
+r68
+<parameter_list> ::= .<parameter_declaration><parameter_list_>		,
+[0, 11, 9, 16, 36]
+s81
+s122
+s146
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 9, 16, 36, 81, 122, 146]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25]
+s59
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s33
+s77
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59, 33, 77]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59, 33, 77]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59, 33, 77]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59, 33, 77]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59, 33, 77]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59, 33, 77]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59, 33, 77]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59, 33, 77]
+s118
+r26
+<logical_and_expression> ::= .<equality_expression>AND_OP<logical_and_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 9, 16, 36, 81, 122, 146]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 9, 16, 36, 81, 122, 146]
+s163
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25]
+s59
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s20
+s39
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59, 20, 39]
+s85
+r28
+<logical_or_expression> ::= .<logical_and_expression>OR_OP<logical_or_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163]
+s163
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25]
+s59
+s19
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59, 19]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59, 19]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59, 19]
+s37
+r8
+<unary_expression> ::= .!<unary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163]
+s163
+r62
+<statement_list> ::= .<statement>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 9, 16, 36, 81, 122, 146, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 9, 16, 36, 81, 122, 146]
+s174
+s196
+r55
+<compound_statement> ::= .{<statement_list>}		,
+[0, 11, 9, 16, 36, 81, 122]
+s147
+r76
+<function_definition> ::= .VOIDID(<parameter_list>)<compound_statement>		,
+[0, 11]
+s10
+r77
+<external_declaration> ::= .<function_definition>		,
+[0, 11]
+s11
+s9
+s16
+s36
+r71
+<parameter_list_> ::= .null		,
+[0, 11, 11, 9, 16, 36]
+s83
+r69
+<parameter_list> ::= .<parameter_list_>		,
+[0, 11, 11, 9, 16, 36]
+s81
+s122
+s146
+s7
+r64
+<type_specifier> ::= .INT		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146]
+s6
+s15
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146]
+s157
+s182
+s21
+s56
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s53
+s97
+s56
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21, 53, 97]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21, 53, 97]
+s53
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21, 53, 97]
+s135
+r11
+<multiplicative_expression> ::= .<unary_expression>*<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s48
+s93
+s56
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21, 48, 93]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21, 48, 93]
+s53
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21, 48, 93]
+s48
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21, 48, 93]
+s132
+r16
+<additive_expression> ::= .<multiplicative_expression>-<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s54
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s49
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s55
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s42
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s52
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s50
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182, 21]
+s46
+s91
+r6
+<primary_expression> ::= .(<expression>)		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s30
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 157, 182]
+s199
+s228
+r73
+<declaration> ::= .<parameter_declaration>=<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146]
+s156
+s7
+r64
+<type_specifier> ::= .INT		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156]
+s6
+s15
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156]
+s157
+s183
+r72
+<declaration> ::= .<parameter_declaration>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156]
+s156
+s7
+r64
+<type_specifier> ::= .INT		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156]
+s6
+s15
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156]
+s157
+s183
+r72
+<declaration> ::= .<parameter_declaration>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156]
+s156
+s7
+r64
+<type_specifier> ::= .INT		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156]
+s6
+s15
+s35
+s78
+s119
+r67
+<parameter_declaration> ::= .<type_specifier>ID[CONST]		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156]
+s157
+s183
+r72
+<declaration> ::= .<parameter_declaration>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156]
+s156
+s7
+r64
+<type_specifier> ::= .INT		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156, 156]
+s6
+s15
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156, 156]
+s157
+s183
+r72
+<declaration> ::= .<parameter_declaration>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156, 156]
+s156
+s5
+r65
+<type_specifier> ::= .CHAR		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156, 156, 156]
+s6
+s15
+r66
+<parameter_declaration> ::= .<type_specifier>ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156, 156, 156]
+s157
+s183
+r72
+<declaration> ::= .<parameter_declaration>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156, 156, 156]
+s156
+r74
+<declaration_list> ::= .<declaration>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156, 156, 156]
+s181
+r75
+<declaration_list> ::= .<declaration><declaration_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156, 156]
+s181
+r75
+<declaration_list> ::= .<declaration><declaration_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156, 156]
+s181
+r75
+<declaration_list> ::= .<declaration><declaration_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156, 156]
+s181
+r75
+<declaration_list> ::= .<declaration><declaration_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 156]
+s181
+r75
+<declaration_list> ::= .<declaration><declaration_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146]
+s162
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25]
+s59
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25, 59]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162]
+s163
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25]
+s59
+s29
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59, 29]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59, 29]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59, 29]
+s69
+r9
+<unary_expression> ::= .-<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163]
+s163
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25]
+s59
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59]
+s31
+s70
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 31, 70]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 31, 70]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 31, 70]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 31, 70]
+s111
+r11
+<multiplicative_expression> ::= .<unary_expression>*<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59]
+s26
+s67
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 26, 67]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 26, 67]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 26, 67]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 26, 67]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59, 26, 67]
+s109
+r15
+<additive_expression> ::= .<multiplicative_expression>+<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163]
+s163
+s165
+s189
+s23
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25]
+s59
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25, 59]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189]
+s203
+s233
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189]
+s202
+s23
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s32
+s73
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 32, 73]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 32, 73]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 32, 73]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 32, 73]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 32, 73]
+s114
+r18
+<relational_expression> ::= .<additive_expression><<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s30
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s231
+s260
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202]
+s230
+s45
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230]
+s47
+s60
+r33
+<assignment_operator> ::= .ADD_ASSIGN		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47]
+s92
+s56
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47, 92]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47, 92]
+s53
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47, 92]
+s48
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47, 92]
+s54
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47, 92]
+s49
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47, 92]
+s55
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47, 92]
+s42
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 47, 92]
+s131
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230]
+s50
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230]
+s258
+s295
+s169
+s170
+s57
+s105
+s143
+r2
+<variable> ::= .ID[ID]		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25]
+s59
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169]
+s163
+s175
+s197
+r45
+<jump_statement> ::= .CONTINUE;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 163]
+s172
+r61
+<statement> ::= .<jump_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 163]
+s163
+r62
+<statement_list> ::= .<statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295, 169]
+s193
+s206
+r55
+<compound_statement> ::= .{<statement_list>}		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295]
+s158
+r57
+<statement> ::= .<compound_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 165, 189, 202, 230, 258, 295]
+s313
+r44
+<iteration_statement> ::= .FOR(<expression_statement><expression_statement><expression>)<statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163]
+s167
+r58
+<statement> ::= .<iteration_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163]
+s163
+s171
+s195
+s45
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s47
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s53
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s48
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s54
+s101
+s87
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 54, 101]
+s47
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 54, 101]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 54, 101]
+s53
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 54, 101]
+s48
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 54, 101]
+s54
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 54, 101]
+s139
+r19
+<relational_expression> ::= .<additive_expression>><relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s49
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s55
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s42
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s52
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s50
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195]
+s227
+s256
+s290
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25]
+s59
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s26
+s67
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59, 26, 67]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59, 26, 67]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59, 26, 67]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59, 26, 67]
+s109
+r15
+<additive_expression> ::= .<multiplicative_expression>+<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290]
+s163
+r62
+<statement_list> ::= .<statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 290]
+s309
+s319
+r55
+<compound_statement> ::= .{<statement_list>}		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256]
+s279
+r57
+<statement> ::= .<compound_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256]
+s285
+s304
+s169
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25]
+s59
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s26
+s67
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59, 26, 67]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59, 26, 67]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59, 26, 67]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59, 26, 67]
+s109
+r15
+<additive_expression> ::= .<multiplicative_expression>+<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169]
+s163
+r62
+<statement_list> ::= .<statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304, 169]
+s193
+s206
+r55
+<compound_statement> ::= .{<statement_list>}		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304]
+s158
+r57
+<statement> ::= .<compound_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 171, 195, 227, 256, 285, 304]
+s316
+r41
+<selection_statement> ::= .IF(<expression>)<statement>ELSE<statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163]
+s176
+r59
+<statement> ::= .<selection_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163]
+s163
+s164
+s188
+s45
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s47
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s53
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s48
+s94
+s87
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 48, 94]
+s47
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 48, 94]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 48, 94]
+s53
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 48, 94]
+s48
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 48, 94]
+s133
+r15
+<additive_expression> ::= .<multiplicative_expression>+<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s54
+s100
+s87
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 54, 100]
+s47
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 54, 100]
+s44
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 54, 100]
+s53
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 54, 100]
+s48
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 54, 100]
+s54
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 54, 100]
+s138
+r18
+<relational_expression> ::= .<additive_expression><<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s49
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s55
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s42
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s52
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s50
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188]
+s201
+s229
+s169
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25]
+s59
+s38
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s25
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s26
+s66
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59, 26, 66]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59, 26, 66]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59, 26, 66]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59, 26, 66]
+s108
+r16
+<additive_expression> ::= .<multiplicative_expression>-<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169]
+s163
+s168
+s190
+r46
+<jump_statement> ::= .BREAK;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 163]
+s172
+r61
+<statement> ::= .<jump_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 163]
+s163
+r62
+<statement_list> ::= .<statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229, 169]
+s193
+s206
+r55
+<compound_statement> ::= .{<statement_list>}		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229]
+s158
+r57
+<statement> ::= .<compound_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 164, 188, 201, 229]
+s257
+r42
+<iteration_statement> ::= .WHILE(<expression>)<statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163]
+s167
+r58
+<statement> ::= .<iteration_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163]
+s163
+s170
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163]
+s25
+s62
+r29
+<assignment_operator> ::= .=		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25]
+s59
+s34
+r4
+<primary_expression> ::= .CONST		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25, 59]
+s22
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25, 59]
+s31
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25, 59]
+s26
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25, 59]
+s32
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25, 59]
+s27
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25, 59]
+s33
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25, 59]
+s20
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 25, 59]
+s107
+r36
+<assignment_expression> ::= .<variable><assignment_operator><logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163]
+s28
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163]
+s160
+s184
+r39
+<expression_statement> ::= .<expression>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163]
+s166
+r60
+<statement> ::= .<expression_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163]
+s163
+s170
+s194
+s213
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s215
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s211
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s222
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s216
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s223
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s214
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s224
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s209
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s221
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s218
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s212
+s217
+s213
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s215
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s211
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s222
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s216
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s223
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s214
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s224
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s209
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s221
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s218
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217]
+s244
+s217
+s213
+r0
+<variable> ::= .ID		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s215
+r3
+<primary_expression> ::= .<variable>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s211
+r7
+<unary_expression> ::= .<primary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s222
+r10
+<multiplicative_expression> ::= .<unary_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s216
+r14
+<additive_expression> ::= .<multiplicative_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s223
+r17
+<relational_expression> ::= .<additive_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s214
+r22
+<equality_expression> ::= .<relational_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s224
+r25
+<logical_and_expression> ::= .<equality_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s209
+r27
+<logical_or_expression> ::= .<logical_and_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s221
+r35
+<assignment_expression> ::= .<logical_or_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s218
+r37
+<expression> ::= .<assignment_expression>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217]
+s244
+r51
+<real_parameters_> ::= .null		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244, 217, 244]
+s269
+r50
+<real_parameters_> ::= .,<expression><real_parameters_>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212, 217, 244]
+s269
+r50
+<real_parameters_> ::= .,<expression><real_parameters_>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194, 212]
+s238
+r48
+<real_parameters> ::= .<expression><real_parameters_>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 170, 194]
+s208
+s235
+r52
+<call_function> ::= .ID(<real_parameters>)		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163]
+s177
+s198
+r53
+<jump_statement> ::= .<call_function>;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163]
+s172
+r61
+<statement> ::= .<jump_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163]
+s163
+s161
+s185
+r47
+<jump_statement> ::= .RETURN;		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 163]
+s172
+r61
+<statement> ::= .<jump_statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 163]
+s163
+r62
+<statement_list> ::= .<statement>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162, 163]
+s187
+r63
+<statement_list> ::= .<statement><statement_list>		,
+[0, 11, 11, 9, 16, 36, 81, 122, 146, 162]
+s186
+s200
+r56
+<compound_statement> ::= .{<declaration_list><statement_list>}		,
+[0, 11, 11, 9, 16, 36, 81, 122]
+s147
+r76
+<function_definition> ::= .VOIDID(<parameter_list>)<compound_statement>		,
+[0, 11, 11]
+s10
+r77
+<external_declaration> ::= .<function_definition>		,
+[0, 11, 11]
+s11
+r79
+<program> ::= .<external_declaration>		,
+[0, 11, 11]
+s17
+r80
+<program> ::= .<external_declaration><program>		,
+[0, 11]
+s17
+r80
+<program> ::= .<external_declaration><program>		,
+[0]
+s1
+r81
+<s> ::= .<program>		,
+[0]
+s8
+ACC
+ACCEPT

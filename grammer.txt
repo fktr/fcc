@@ -1,0 +1,126 @@
+*terminals
+ID
+INT
+CHAR
+VOID
+CONST
+STRING_LITERAL
+LE_OP
+GE_OP
+EQ_OP
+NE_OP
+AND_OP
+OR_OP
+MUL_ASSIGN
+DIV_ASSIGN
+MOD_ASSIGN
+ADD_ASSIGN
+SUB_ASSIGN
+IF
+ELSE
+WHILE
+FOR
+CONTINUE
+BREAK
+RETURN
+(
+)
+[
+]
+{
+}
+,
+;
+=
+>
+<
++
+-
+*
+/
+%
+!
+*productions
+<variable> ::= ID
+<variable> ::= ID [ CONST ]
+<variable> ::= ID [ ID ]
+<primary_expression> ::= <variable>
+<primary_expression> ::= CONST
+<primary_expression> ::= STRING_LITERAL
+<primary_expression> ::= ( <expression> )
+<unary_expression> ::= <primary_expression>
+<unary_expression> ::= ! <unary_expression>
+<unary_expression> ::= - <unary_expression>
+<multiplicative_expression> ::= <unary_expression>
+<multiplicative_expression> ::= <unary_expression> * <multiplicative_expression>
+<multiplicative_expression> ::= <unary_expression> / <multiplicative_expression>
+<multiplicative_expression> ::= <unary_expression> % <multiplicative_expression>
+<additive_expression> ::= <multiplicative_expression>
+<additive_expression> ::= <multiplicative_expression> + <additive_expression>
+<additive_expression> ::= <multiplicative_expression> - <additive_expression>
+<relational_expression> ::= <additive_expression>
+<relational_expression> ::= <additive_expression> < <relational_expression>
+<relational_expression> ::= <additive_expression> > <relational_expression>
+<relational_expression> ::= <additive_expression> LE_OP <relational_expression>
+<relational_expression> ::= <additive_expression> GE_OP <relational_expression>
+<equality_expression> ::= <relational_expression>
+<equality_expression> ::= <relational_expression> EQ_OP <equality_expression>
+<equality_expression> ::= <relational_expression> EQ_OP <equality_expression>
+<logical_and_expression> ::= <equality_expression>
+<logical_and_expression> ::= <equality_expression> AND_OP <logical_and_expression>
+<logical_or_expression> ::= <logical_and_expression>
+<logical_or_expression> ::= <logical_and_expression> OR_OP <logical_or_expression>
+<assignment_operator> ::= =
+<assignment_operator> ::= MUL_ASSIGN
+<assignment_operator> ::= DIV_ASSIGN
+<assignment_operator> ::= MOD_ASSIGN
+<assignment_operator> ::= ADD_ASSIGN
+<assignment_operator> ::= SUB_ASSIGN
+<assignment_expression> ::= <logical_or_expression>
+<assignment_expression> ::= <variable> <assignment_operator> <logical_or_expression>
+<expression> ::= <assignment_expression>
+<expression_statement> ::= ;
+<expression_statement> ::= <expression> ;
+<selection_statement> ::= IF ( <expression> ) <statement>
+<selection_statement> ::= IF ( <expression> ) <statement> ELSE <statement>
+<iteration_statement> ::= WHILE ( <expression> ) <statement>
+<iteration_statement> ::= FOR ( <expression_statement> <expression_statement> ) <statement>
+<iteration_statement> ::= FOR ( <expression_statement> <expression_statement> <expression> ) <statement>
+<jump_statement> ::= CONTINUE ;
+<jump_statement> ::= BREAK ;
+<jump_statement> ::= RETURN ;
+<real_parameters> ::= <expression> <real_parameters_>
+<real_parameters> ::= <real_parameters_>
+<real_parameters_> ::= , <expression> <real_parameters_>
+<real_parameters_> ::=
+<call_function> ::= ID ( <real_parameters> )
+<jump_statement> ::= <call_function> ;
+<compound_statement> ::= { }
+<compound_statement> ::= { <statement_list> }
+<compound_statement> ::= { <declaration_list> <statement_list> }
+<statement> ::= <compound_statement>
+<statement> ::= <iteration_statement>
+<statement> ::= <selection_statement>
+<statement> ::= <expression_statement>
+<statement> ::= <jump_statement>
+<statement_list> ::= <statement>
+<statement_list> ::= <statement> <statement_list>
+<type_specifier> ::= INT
+<type_specifier> ::= CHAR
+<parameter_declaration> ::= <type_specifier> ID
+<parameter_declaration> ::= <type_specifier> ID [ CONST ]
+<parameter_list> ::= <parameter_declaration> <parameter_list_>
+<parameter_list> ::= <parameter_list_>
+<parameter_list_> ::= , <parameter_declaration> <parameter_list_>
+<parameter_list_> ::=
+<declaration> ::= <parameter_declaration> ;
+<declaration> ::= <parameter_declaration> = <expression> ;
+<declaration_list> ::= <declaration>
+<declaration_list> ::= <declaration> <declaration_list>
+<function_definition> ::= VOID ID ( <parameter_list> ) <compound_statement>
+<external_declaration> ::= <function_definition>
+<external_declaration> ::= <declaration_list>
+<program> ::= <external_declaration>
+<program> ::= <external_declaration> <program>
+<s> ::= <program>
+*end
